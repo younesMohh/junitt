@@ -22,7 +22,7 @@ public class JunitTest{
 		}
 		
 @Test
-	public  void verifier_le_premier_liste_envoyer_parfctpartitionthenCorrect() {
+	public  void verifier_le_premier_liste_envoyer_partition() {
 	List<Integer> Llist = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8);
 	List<Integer> premierPrtition = partition(Llist,3).get(0); 
 	System.out.println(premierPrtition.get(0));

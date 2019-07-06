@@ -22,11 +22,12 @@ public class JunitTest{
 		}
 		
 @Test
-public final void verifier_le premier_liste_envoyer_par fct partitionthenCorrect() {
-List<Integer> Llist = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8);
-List<Integer> premierPrtition = partition(Llist,3).get(0); 
- List<Integer> expected = Arrays.asList(1, 2, 3);
- assertThat(partition(intList,3).size(), equalTo(3));
- assertThat(premierPrtition, equalTo(expected));                                       }
+	public  void verifier_le_premier_liste_envoyer_parfctpartitionthenCorrect() {
+	List<Integer> Llist = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8);
+	List<Integer> premierPrtition = partition(Llist,3).get(0); 
+	 List<Integer> expected = Arrays.asList(1, 2, 3);
+	 Assert.assertEquals(partition(Llist,3).size(), equals(3));
+	 Assert.assertEquals(premierPrtition, equals(expected));     
+	 }
 
 }
